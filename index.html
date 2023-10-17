@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Waap.css">
+    <script src="https://kit.fontawesome.com/2d3c503f69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="video-background" src="./cloud_-_2142 (540p).mp4"></video>
+    </div>
+    <div class="container">
+          
+                <div class="leftdiv">
+                    <div class="div1">
+                        <i class="fa-solid fa-cloud icon" ></i>
+                        <h3 id="city">CITY</H3>
+                    </div>
+                    <div class="result">
+                        <p id="weatherInfo"></p>
+                    </div>
+                    <br>
+                     <div id="selector1">
+                        <button id="selector" ><i class="fa-solid fa-location-dot icon"></i>Search location here</button>
+                     </div>
+                     
+                     
+                </div>
+                <div id="middlediv">
+                    <button id="cancel">×</button>
+                    <button id="getCurrentWeatherBtn">Get Current Weather</button>
+                    <input type="text" id="locationInput" placeholder="Enter a city">
+                    <button id="getWeatherBtn">Get Weather</button>
+                    
+                 </div>
+                <div class="rightdiv">
+                    <div class="humidity one">
+                        <p><i class="fa-solid fa-droplet icon" ></i>Humidity</p>
+                        <h1 id="id1"></h1>
+                    </div>
+                    <div class="cloud one">
+                        <p><i class="fa-brands fa-cloudversify icon"></i>Cloud</p>
+                        <h1 id="id2"></h1>
+                    </div>
+                    <div class="rain one">
+                        <p><i class="fa-solid fa-temperature-three-quarters icon"></i>Feels Like</p>
+                        <h1 id="id3"></h1>
+                    </div>
+                    <div class="wind one">
+                        <p><i class="fa-solid fa-wind icon"></i>Wind Degree</p>
+                         <h1 id="id4"></h1>
+                    </div>
+                    
+               </div>
+            
+    </div>
+    <script src="Waap.js"></script>
+</body>
+</html>

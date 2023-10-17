@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh;
+    max-width:100vw;
+    /* background-image: url(./imggg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly; */
+    /* border: 2px solid red;  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+}
+
+.icon{
+    font-size:30px;
+    margin-right: 5px;
+    color:rgb(10, 99, 183);
+}
+.leftdiv{
+    height: 35%;
+    width: 20%;
+    /* border: 2px solid white; */
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    font-size: 20px;
+   
+}
+.rightdiv{
+    margin-top:3%;
+    height:80%;
+    width: 30%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+.one{
+    height:23%;
+    width:50%;
+   
+    /* border: 2px solid white; */
+}
+#selector{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(165, 42, 42, 0);
+    border: none;
+    font-size: 20px;
+}
+#middlediv{
+    height:50%;
+    width:25%;
+    border: 2px solid white;
+    border-radius: 50px;
+   /* display: none; */
+    margin-top: 15%;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1%;
+    /* transition: display 1s; */
+    
+
+}
+#getCurrentWeatherBtn{
+    height:20%;
+    width:90%;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: rgba(80, 203, 255, 0.386);
+    border: none;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: all .5s;
+}
+#locationInput{
+    height:20%;
+    width:90%;
+    border-radius: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+#getWeatherBtn{
+    height:20%;
+    width:90%;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: rgba(80, 203, 255, 0.386);
+    border: none;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: all .5s;
+
+}
+#cancel{
+    height:10%;
+    width:10%;
+    font-size:30px;
+    margin-top: 2%;
+    background-color: rgba(100, 148, 237, 0);
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    
+    /* border: 2px solid white; */
+}
+#cancel:hover{
+    font-size:35px;
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+}
+.humidity:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+.cloud:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+.rain:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+.wind:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+.div1:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+.result:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+#selector:hover{
+    color: rgba(218, 165, 32, 0.879);
+    cursor: pointer;
+    font-size: 22px;
+}
+#getCurrentWeatherBtn:hover{
+    background-color: rgba(100, 148, 237, 0.371);
+    cursor: pointer;
+    color: white;
+    height:22%;
+    width:92%;
+    
+}
+#getWeatherBtn:hover{
+    background-color: rgba(100, 148, 237, 0.371);
+    cursor: pointer;
+    color: white;
+    height:22%;
+    width:92%;
+}
+@media screen and (max-width: 1037px) {
+    #selector{
+        margin-right: 35px;}
+    
+        #middlediv{
+            height:50%;
+            width:30%;}  
+       
+}
+
+@media screen and (max-width: 1000px) {
+    /* Adjust styles for screens with a minimum width of 768px */
+    .container {
+        flex-direction: column;
+    }
+
+    .leftdiv {
+        height:30% ;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightdiv {
+        height:30% ;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+       
+   
+    }
+    #middlediv{
+        height:60%;
+        width:40%;
+        margin: auto;
+        
+        
+    }
+    .one {
+        height: 100%;
+        width: 25%;
+        
+        
+    }
+    .one p{
+        text-align: center;
+    }
+    #id1,#id2,#id3,#id4{
+        font-size: 30px;
+        text-align: center;
+    }
+    .icon{
+        width: 100%;
+        text-align: center;
+       
+    }
+    #selector{
+       margin-bottom: 5%;
+    }
+    #getWeatherBtn{
+        
+        margin-top: 3%;}
+
+    #getCurrentWeatherBtn{
+         
+            margin-top: 3%;
+            
+        }
+        #locationInput{
+           
+            margin-top: 3%;
+            
+        
+        }
+
+
+
+    /* Add more responsive styles as needed */
+}
+@media screen and (max-width: 700px) {
+    /* Adjust styles for screens with a minimum width of 768px */
+    .container {
+        flex-direction: column;
+    }
+
+    .leftdiv {
+        height:30% ;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightdiv {
+        height:30% ;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+       
+   
+    }
+    #middlediv{
+        height:60%;
+        width:70%;
+        margin: auto;
+        
+        
+    }
+    .one {
+        height: 100%;
+        width: 25%;
+        
+        
+    }
+    .one p{
+        text-align: center;
+    }
+    #id1,#id2,#id3,#id4{
+        font-size: 30px;
+        text-align: center;
+    }
+    .icon{
+        width: 100%;
+        text-align: center;
+       
+    }
+    #selector{
+       margin-bottom: 5%;
+    }
+    #getWeatherBtn{
+        
+        margin-top: 3%;}
+
+    #getCurrentWeatherBtn{
+         
+            margin-top: 3%;
+            
+        }
+        #locationInput{
+           
+            margin-top: 3%;
+            
+        
+        }
+
+
+
+    /* Add more responsive styles as needed */
+}
+
+@media screen and (max-width: 415px) {
+    /* Adjust styles for screens with a minimum width of 768px */
+    .container {
+        flex-direction: column;
+    }
+
+    .leftdiv {
+        height:30% ;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightdiv {
+        height:30% ;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+       
+   
+    }
+    #middlediv{
+        height:40%;
+        width:70%;
+        margin: auto;
+        
+        
+    }
+    .one {
+        height: 100%;
+        width: 25%;
+        
+        
+    }
+    .one p{
+        text-align: center;
+    }
+    #id1,#id2,#id3,#id4{
+        font-size: 30px;
+        text-align: center;
+    }
+    .icon{
+        width: 100%;
+        text-align: center;
+       
+    }
+    #selector{
+       margin-bottom: 5%;
+    }
+
+    /* Add more responsive styles as needed */
+}
